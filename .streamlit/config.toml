@@ -1,0 +1,22 @@
+[theme]
+# Tema cálido tipo "pan tostado" que combina con el logo de hamburguesa
+primaryColor = "#D89352"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#FAF6F0"
+textColor = "#2B1810"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+# En Streamlit Cloud se ignora este puerto, pero útil para dev local
+port = 8501
+# Subir archivos hasta 50 MB (default de Streamlit es 200 MB, pero
+# lo bajamos para que no se le cuelgue el navegador a un usuario
+# que sube por error un PDF gigante).
+maxUploadSize = 50
+
+[client]
+# No mostrar el menú de "Made with Streamlit" en producción
+toolbarMode = "minimal"
