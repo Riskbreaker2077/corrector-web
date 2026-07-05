@@ -1,15 +1,24 @@
 # Corrector.IA — versión web
 
-Corrector de estilo en español asistido por IA, con interfaz web. Pensado
-para profes de lengua, editores, estudiantes de posgrado y cualquiera que
-necesite pulir un texto sin perder su voz.
+Aplicación web que devuelve una **corrección de estilo** de un documento
+en **formato crudo** (`.txt` plano, UTF-8). El usuario sube un `.txt`, la
+app lo procesa párrafo por párrafo contra un modelo de IA, y entrega como
+salida otro `.txt` con la versión corregida.
+
+Pensado para profes de lengua, editores, estudiantes de posgrado y
+cualquiera que necesite pulir un texto en español sin perder su voz.
+
+> ⚠️ **Formato de entrada y salida: solo `.txt` plano.** No acepta `.docx`,
+> `.pdf`, `.md` ni Markdown enriquecido. Si tu fuente es Word o PDF,
+> expórtala primero a `.txt` UTF-8 desde tu editor.
 
 **App en vivo:** https://web-hamburguesa-extra.streamlit.app/
 
 ## ¿Qué hace?
 
 Subes un archivo `.txt`, eliges proveedor de IA + modelo + tipo de texto +
-intensidad, y la app te devuelve una versión corregida que puedes descargar.
+intensidad, y la app te devuelve una versión corregida del mismo `.txt`
+que puedes descargar.
 
 El procesamiento es **párrafo por párrafo**: la app parte tu texto por líneas
 en blanco, envía cada párrafo al modelo con un prompt especializado, y al final
